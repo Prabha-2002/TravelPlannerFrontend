@@ -1,0 +1,86 @@
+/* ViewLocationDetails.css */
+
+/* Container styling */
+.container {
+    text-align: center; /* Center-align text in the container */
+}
+
+/* Heading styling */
+h2 {
+    color: red; /* Red color for heading */
+    font-weight: bold; /* Bold text */
+    background-color: yellow; /* Yellow background */
+    padding: 10px; /* Padding around the heading */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bolder;
+    padding-top: 4%;
+    width: 200px;
+    height: 70px;
+    font-size: xx-large;
+    display: inline-block; /* Fit to content width */
+}
+h2 {
+    color: red; /* Red color for heading */
+    font-weight: bold; /* Bold text */
+    background-color: yellow; /* Yellow background */
+    padding: 10px; /* Padding around the heading */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bolder;
+    padding-top: 4%;
+    width: 400px;
+    height: 70px;
+    font-size: xx-large;
+    display: inline-block; /* Fit to content width */
+}
+.headingtop{
+    height: 70px;
+    font-size: xx-large;
+    width: 300px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+}
+/* Button styling */
+.btn {
+    padding: 0.5rem 1.5rem; /* 1 cm gap between start and end of button text */
+    margin: 0.5rem; /* Margin for spacing between buttons */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners for buttons */
+    width:160px;
+
+}
+
+/* Alert styling */
+.alert {
+    margin: 1rem 0; 
+    background-color: blue;/* Margin for spacing around alert */
+}
+
+/* Table styling */
+.table {
+    width: 100%; /* Full width of container */
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Collapse borders */
+    background-color: #000000; /* Dark background for table */
+    color: white; /* White text color */
+}
+
+.table th, .table td {
+    padding: 0.75rem; /* Padding inside table cells */
+    border: none; /* Remove borders */
+    text-align: center; /* Center-align text */
+}
+
+.table th {
+    background-color: #000000; /* Darker background for table headers */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #000000; /* Alternate row colors */
+}
+
+.table tbody tr:hover {
+    background-color: #000000; /* Highlight row on hover */
+}

@@ -1,0 +1,89 @@
+/* Dashboard.css */
+
+/* Container styling */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Content box styling */
+.dashboard-content {
+    background: white; /* Solid white background for the content */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.dashboard-content:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+/* Button styling */
+.zoom-button {
+    transition: transform 0.3s ease; /* Ensure buttons have smooth transition */
+}
+
+.zoom-button:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover for buttons */
+}
+
+/* Rainbow gradient heading styling */
+.rainbow-heading {
+    width: 700px;
+    height: 120px;
+    font-size: 4rem; /* Extra-large size */
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+    background-clip: text; /* For non-WebKit browsers */
+    color: transparent; /* Hide original color */
+    text-align: center; /* Center align text */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-heading {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-button:hover {
+    color: #0056b3; /* Darker blue */
+    border-bottom: 2px solid #0056b3;
+}

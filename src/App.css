@@ -1,0 +1,485 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.userheading
+{
+ background-color: #0300b8;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.carousel-item img {
+  padding-top: 10;
+  height: 650px; /* Adjust this value to set the height you want */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; /* Ensures the image takes up the full width of the carousel */
+}
+
+
+.custom-textarea1 {
+  height: 200px; /* Adjust the height as needed */
+  resize: vertical; /* Allows resizing only vertically */
+}
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* Adds spacing between label and input */
+  background-color: black;
+  color: white;
+  /* padding: 0.5rem; */
+  padding-top: 0.50 rem;
+  margin-left:0;
+  border-radius: 0.25rem;
+  padding-left: 0%;
+  position: relative;
+  font-weight: bold;
+  
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.loginheading{
+  background-color: rgb(14, 107, 255);
+  height: 50px;
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
+  align-content: center;
+  width: 340px;
+  text-align: center;
+  margin-left: 5px;
+}
+/* From Uiverse.io by BHARGAVPATEL1244 */ 
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: ghostwhite;
+ }
+ 
+
+ 
+ button span {
+  position: relative;
+  z-index: 10;
+  color: rgb(235, 231, 231);
+  font-size: large;
+  font-weight: bold;
+
+  transition: color 0.4s;
+ }
+ 
+ button:hover span {
+  color: rgb(255, 9, 99);
+ }
+ 
+ button::before,
+ button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+ 
+ button::before {
+  content: "";
+  background: #ffd105;
+  color: red;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ button:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ /* Add this to your App.css file */
+.header-red {
+  background-color: rgb(255, 243, 15);
+  width: 180px;
+  color: white;
+  padding: 10px;
+}
+
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.header-red123 {
+  background-color: rgb(255, 243, 15);
+  padding: 10px; /* Adjust the padding as needed */
+  height: auto; /* Adjust height as needed or remove if padding is sufficient */
+  display: grid; /* Makes the background only as wide as the text */
+  text-align: center;
+  width: 90px;
+  color: red;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* From Uiverse.io by Jedi-hongbin */ 
+.fullback {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #000000;
+ }
+ 
+ .fullback > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .fullback:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ .fullback:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+.custom-form-container {
+  position: relative; /* Makes the form container the reference for absolute positioning */
+  padding: 20px; /* Adjust padding as needed */
+  margin-top: 20px; /* Space above the form */
+}
+
+.custom-back-button {
+  position: absolute;
+  top: 20px; /* Distance from the top of the form */
+  left: 11px; /* Distance from the left edge of the form */
+  cursor: pointer;
+  width: fit-content;
+  z-index: 1000; /* Ensures it appears above other content */
+}
+
+.custom-textarea1 {
+  height: 150px; /* Adjust the height of the textarea */
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.autocomplete-dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-dropdown li:hover {
+  background: #f0f0f0;
+}
+
+.headings1{
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #000000;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #e8e8e8;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
+
+
+ /* App.css */
+
+/* Heading styling for the main header */
+.header-red {
+  color: red; /* Text color for header */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Bottom margin */
+}
+
+/* Button styling */
+.btn-custom {
+  color: white; /* Text color */
+  padding: 0.5rem 1.5rem; /* Padding for spacing around the text */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  margin: 0.5rem; /* Margin for spacing between buttons */
+  text-align: center; /* Center text inside button */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Button sizes */
+.btn-success {
+  max-width: 200px; /* Set a max-width for the button */
+  display: inline-block; /* Inline-block for proper sizing */
+}
+
+.btn-primary, .btn-danger {
+  max-width: 150px; /* Set a max-width for the button */
+  display: inline-block; /* Inline-block for proper sizing */
+}
+
+/* Table and card styling adjustments (if needed) */
+.card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+
+
+
+ /* Add this to your App.css file */
+
+.text-red-bold {
+  color: red;
+  font-weight: bold;
+}
+
+.link-bold {
+  font-weight: bold;
+  color: red; /* Optional: Apply the same color to the link */
+  text-decoration: none; /* Optional: Remove underline from the link */
+}
+
+.link-bold:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* App.css */
+
+/* Styling for the confirmation card */
+.confirm-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1050; /* Ensure it appears above other content */
+}
+
+.confirm-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.confirm-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#cloud{
+  font-size:60px;
+  color:rgb(0, 140, 255);
+  background-color: white;
+  width: 250px;
+  padding-left: 12px;
+  border-radius: 10px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  margin-right: 30px;
+  margin-left: 42%;
+}
+.confirm-card-title {
+  margin-left: 10px;
+}
+
+#cloudt{
+  font-size: 30px;
+  
+}
+
+.confirm-card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-card-footer .btn {
+  margin: 0 5px;
+}
+
+
+.clickhere{
+  color:rgb(0, 26, 255);
+  
+}
+
+
+.btn54 {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: ghostwhite;
+ }
+ 
+#textq{
+  margin-left: 2 px;
+}
+
+
+
+
+ .btn54 span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+ }
+ 
+ .btn54:hover span {
+  color: rgb(255, 255, 255);
+ }
+
+
+ 
+ .btn54::before,
+ .btn54::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+ 
+ .btn54::before {
+  content: "";
+  background: #0300b8;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ .btn54:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ 
+.uhe{
+background-color: yellow;
+color: red;
+padding: 10px;
+font-weight: bolder;
+font-size: x-large;
+}
+

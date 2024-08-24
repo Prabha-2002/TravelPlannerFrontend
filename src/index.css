@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* src/index.css */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/04/Feature-image-happy-family.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+
+/* src/App.css */
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.autocomplete-dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-dropdown li:hover {
+  background: #f0f0f0;
+}
