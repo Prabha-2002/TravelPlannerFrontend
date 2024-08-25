@@ -13,12 +13,9 @@ const ViewYourTripDetails = () => {
     useEffect(() => {
         const fetchTripData = async () => {
             try {
-                // Fetch trip data
                 const response = await axios.get(`http://localhost:8080/api/trip-forms/${tripId}`);
                 setTripData(response.data);
-                
-                // Fetch DayForm details
-                const dayFormPromises = response.data.days.map(day => 
+                                const dayFormPromises = response.data.days.map(day => 
                     axios.get(`http://localhost:8080/api/day-forms/${day.id}`)
                 );
                 const dayFormResponses = await Promise.all(dayFormPromises);
