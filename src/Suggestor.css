@@ -98,7 +98,6 @@
 
 
 .custom-subheader {
-    /* background-color: yellow; */
     color: red;
     font-weight: bold;
     padding: 8px;
@@ -106,7 +105,6 @@
     width:130px;
 }
 .custom-subheader1 {
-    /* background-color: yellow; */
     color: red;
     font-weight: bold;
     padding: 8px;
@@ -162,22 +160,20 @@
   width:800px ;
 }
 
-  /* Styles for the modal overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
-  backdrop-filter: blur(5px); /* Blur the background */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure modal is on top of other content */
+  z-index: 1000;
 }
 
-/* Styles for the modal content */
 .modal-content {
   background: #fff;
   padding: 20px;
@@ -190,7 +186,6 @@
   align-items: center;
 }
 
-/* Optional: Styling for the form section */
 #recommendor-plan {
   background: #f9f9f9;
   padding: 20px;
@@ -198,7 +193,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjust the appearance of buttons inside the modal */
 .btn-primary {
   background-color: #007bff;
   border: none;
@@ -222,9 +216,6 @@
   border: none;
   color: #fff;
 }
-
-/* Suggestor.css */
-
 .custom-header {
   color: #e1dada;
   font-size: 2rem;
@@ -279,21 +270,20 @@
  width: 60%;
  height: 100%;
  transition: 300ms;
- transition: all 0.3s ease; /* Smooth transition for hover effects */
-
+ transition: all 0.3s ease; 
 
 
 }
 
 .custom-btn.btn-2:hover {
   background: black;
-  transform: scale(1.3); /* Zoom effect */
+  transform: scale(1.3); 
 
   color: yellow;
  }
 .custom-btn.btn-2:hover span {
   background: none;
-  transform: scale(1.1); /* Zoom effect */
+  transform: scale(1.1);
 
   color: yellow;
  }
@@ -377,13 +367,13 @@
 }
 
 .trip-schedule-heading1 {
-  font-size: 2rem; /* Adjust size as needed */
-  font-weight: 700; /* Bold text */
-  color: #333; /* Dark color for better readability */
-  text-align: center; /* Center the text */
-  margin-top: 1.5rem; /* Space above the heading */
-  margin-bottom: 9rem; /* Space below the heading */
-  position: relative; /* For pseudo-element positioning */
+  font-size: 2rem;
+  font-weight: 700; 
+  color: #333;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 9rem;
+  position: relative;
 width: 80%;
 text-decoration: none;
 padding-bottom: 50px;
@@ -393,27 +383,25 @@ padding-bottom: 50px;
 .trip-schedule-heading1::after {
   content: "";
   display: block;
-  width: 80%; /* Width of the underline */
-  height: 3px; /* Thickness of the underline */
-  /* background: #007bff; Color of the underline */
-  margin: 0.5rem auto 0; /* Center the underline and add space */
-  border-radius: 5px; /* Rounded corners for the underline */
-  position: absolute; /* Absolute positioning */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact centering */
+  width: 80%; 
+  height: 3px; 
+  margin: 0.5rem auto 0; 
+  border-radius: 5px;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%); 
 }
 
 
-/* Suggestor.css */
 
 .trip-schedule-heading {
-  font-size: 2rem; /* Adjust size as needed */
-  font-weight: 700; /* Bold text */
-  color: #333; /* Dark color for better readability */
-  text-align: center; /* Center the text */
-  margin-top: 1.5rem; /* Space above the heading */
-  margin-bottom: 1.5rem; /* Space below the heading */
-  position: relative; /* For pseudo-element positioning */
+  font-size: 2rem; 
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 1.5rem; 
+  margin-bottom: 1.5rem; 
+  position: relative;
 width: 80%;
 text-decoration: none;
 }
@@ -421,18 +409,15 @@ text-decoration: none;
 .trip-schedule-heading::after {
   content: "";
   display: block;
-  width: 80%; /* Width of the underline */
-  height: 3px; /* Thickness of the underline */
-  /* background: #007bff; Color of the underline */
-  margin: 0.5rem auto 0; /* Center the underline and add space */
-  border-radius: 5px; /* Rounded corners for the underline */
-  position: absolute; /* Absolute positioning */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact centering */
+  width: 80%;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  border-radius: 5px; 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
-/* Suggestor.css */
 
-/* Header styling */
 .custom-header {
   font-size: 2.5rem;
   font-weight: 700;
@@ -441,7 +426,6 @@ text-decoration: none;
   margin-bottom: 2rem;
 }
 
-/* Button styling */
 .custom-btn {
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -456,7 +440,6 @@ text-decoration: none;
   background-color: #0056b3;
 }
 
-/* Section headings */
 .section-heading {
   color: #06223C;
   font-size: 1.75rem;
@@ -465,7 +448,6 @@ text-decoration: none;
   margin-bottom: 1.5rem;
 }
 
-/* Card styling */
 .modern-card {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -482,7 +464,6 @@ text-decoration: none;
   padding: 1rem;
 }
 
-/* Modal overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -567,25 +548,25 @@ text-decoration: none;
 
 .schedule-item {
   display: flex;
-  flex-direction: column; /* Stack the items vertically */
-  margin-bottom: 1rem; /* Space between items */
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .schedule-item > div {
-  display: flex; /* Use flexbox to align label and value horizontally */
-  margin-bottom: 0.5rem; /* Space between fields */
+  display: flex; 
+  margin-bottom: 0.5rem; 
 }
 
 .schedule-item .label {
-  font-weight: bold; /* Bold labels */
-  margin-right: 0.5rem; /* Space between label and value */
+  font-weight: bold; 
+  margin-right: 0.5rem;
 }
 
 .schedule-item .value {
-  flex: 1; /* Allow value to take available space */
+  flex: 1; 
 }
 
 .schedule-item .description {
-  margin-top: 0.5rem; /* Space above description */
-  padding-left: 1; /* Ensure no extra padding */
+  margin-top: 0.5rem;
+  padding-left: 1; 
 }
