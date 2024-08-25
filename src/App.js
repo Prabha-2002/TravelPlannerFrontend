@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.css'; // or './tailwind.css'
+import './index.css';
 import './App.css'
 import Dashboard from './Dashboard';
 import ViewUserDetails from './ViewUserDetails';
