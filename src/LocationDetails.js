@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
-import './App.css'; // Import your custom styles
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './App.css'; 
 import { FaCloud } from 'react-icons/fa';
 
 const LocationDetails = () => {
-    const { id } = useParams(); // Location ID from URL
+    const { id } = useParams();
     const navigate = useNavigate();
     const [location, setLocation] = useState({});
     const [places, setPlaces] = useState([]);
@@ -22,16 +22,11 @@ const LocationDetails = () => {
         }
 
         try {
-            // Fetch location details
             const locationResponse = await axios.get(`http://localhost:8080/api/locations/${id}`);
             setLocation(locationResponse.data);
-
-            // Fetch places associated with the location
             const placesResponse = await axios.get(`http://localhost:8080/api/places/location/${id}`);
             setPlaces(placesResponse.data);
-
-            // Fetch hotels associated with the location
-            const hotelsResponse = await axios.get(`http://localhost:8080/api/topportal/location/${id}`); // Adjusted endpoint
+            const hotelsResponse = await axios.get(`http://localhost:8080/api/topportal/location/${id}`); 
             setHotels(hotelsResponse.data);
         } catch (error) {
             console.error("Error fetching location details:", error.response ? error.response.data : error.message);
@@ -82,7 +77,7 @@ const LocationDetails = () => {
         <div className="container mt-5">
             <button 
             className="fullback"
-            onClick={() => navigate('/admin/locations')} // Navigate to /admin/locations on click
+            onClick={() => navigate('/admin/locations')} 
         >
             <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
                 <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
@@ -109,15 +104,12 @@ const LocationDetails = () => {
                 </button>
             </div> */}
           <div className="container mx-auto px-4 py-6">
-                {/* Flex container for heading and cloud icon */}
                 <div className="flex items-center justify-center mb-8">
                     <h1 className="text-4xl font-bold text-center text-red-600">
                         {location.name || 'Location Details'}
                     </h1> 
                
                 </div>
-
-                {/* Buttons */}
                 <div className="mb-4 flex justify-center gap-2">
                     <button
                         className="btn btn-success btn-custom"
@@ -133,16 +125,10 @@ const LocationDetails = () => {
                     </button>
                 </div>
             </div>
-
-            {/* <div className="mb-4 flex justify-center gap-2"> */}
 <div  id='cloud'   className="flex px-6 py-3">
 <FaCloud size={120} value={location.climaticCondition} /> &nbsp; &nbsp;
     <span id='cloudt'>{location.climaticCondition}</span>
 </div>
-
-            {/* <a  target="_blank" rel="noopener noreferrer" id='cloud'  className="text-gray-400 hover:text-white mx-2"  >
-                        <FaCloud size={30} />
-                    </a> </div> */}
             {error && <div className="alert alert-danger">{error}</div>}
 
             <h1 className="header-red section-header mt-5">
@@ -235,8 +221,6 @@ const LocationDetails = () => {
                     <p>No hotels available.</p>
                 )}
             </div>
-
-            {/* Confirmation Card */}
             {showConfirmCard && (
                 <div className="confirm-card">
                     <div className="confirm-card-body">
