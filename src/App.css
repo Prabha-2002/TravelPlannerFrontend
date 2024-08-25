@@ -17,19 +17,18 @@
 }
 .carousel-item img {
   padding-top: 10;
-  height: 650px; /* Adjust this value to set the height you want */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  width: 100%; /* Ensures the image takes up the full width of the carousel */
-}
+  height: 650px;
+  object-fit: cover;
+  width: 100%; }
 
 
 .custom-textarea1 {
-  height: 200px; /* Adjust the height as needed */
-  resize: vertical; /* Allows resizing only vertically */
+  height: 200px; 
+  resize: vertical; 
 }
 .form-label {
   display: block;
-  margin-bottom: 0.5rem; /* Adds spacing between label and input */
+  margin-bottom: 0.5rem; 
   background-color: black;
   color: white;
   /* padding: 0.5rem; */
@@ -58,7 +57,6 @@
   text-align: center;
   margin-left: 5px;
 }
-/* From Uiverse.io by BHARGAVPATEL1244 */ 
 button {
   outline: none;
   cursor: pointer;
@@ -138,9 +136,9 @@ button {
 }
 .header-red123 {
   background-color: rgb(255, 243, 15);
-  padding: 10px; /* Adjust the padding as needed */
-  height: auto; /* Adjust height as needed or remove if padding is sufficient */
-  display: grid; /* Makes the background only as wide as the text */
+  padding: 10px; 
+  height: auto; 
+  display: grid; 
   text-align: center;
   width: 90px;
   color: red;
@@ -203,22 +201,22 @@ button {
   width: 300px;
 }
 .custom-form-container {
-  position: relative; /* Makes the form container the reference for absolute positioning */
-  padding: 20px; /* Adjust padding as needed */
-  margin-top: 20px; /* Space above the form */
+  position: relative; 
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .custom-back-button {
   position: absolute;
-  top: 20px; /* Distance from the top of the form */
-  left: 11px; /* Distance from the left edge of the form */
+  top: 20px;
+  left: 11px; 
   cursor: pointer;
   width: fit-content;
-  z-index: 1000; /* Ensures it appears above other content */
+  z-index: 1000;
 }
 
 .custom-textarea1 {
-  height: 150px; /* Adjust the height of the textarea */
+  height: 150px; 
 }
 
 .autocomplete-dropdown {
@@ -288,48 +286,36 @@ button {
   width: 100%;
  }
 
-
- /* App.css */
-
-/* Heading styling for the main header */
 .header-red {
-  color: red; /* Text color for header */
-  font-weight: bold; /* Bold text */
-  margin-bottom: 1rem; /* Bottom margin */
+  color: red; 
+  font-weight: bold; 
+  margin-bottom: 1rem; 
 }
-
-/* Button styling */
 .btn-custom {
-  color: white; /* Text color */
-  padding: 0.5rem 1.5rem; /* Padding for spacing around the text */
-  font-size: 16px; /* Font size */
-  border-radius: 5px; /* Rounded corners */
-  margin: 0.5rem; /* Margin for spacing between buttons */
-  text-align: center; /* Center text inside button */
-  white-space: nowrap; /* Prevent text from wrapping */
+  color: white; 
+  padding: 0.5rem 1.5rem; 
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0.5rem; 
+  text-align: center; 
+  white-space: nowrap; 
 }
 
 /* Button sizes */
 .btn-success {
-  max-width: 200px; /* Set a max-width for the button */
-  display: inline-block; /* Inline-block for proper sizing */
+  max-width: 200px; 
+  display: inline-block;
 }
 
 .btn-primary, .btn-danger {
-  max-width: 150px; /* Set a max-width for the button */
-  display: inline-block; /* Inline-block for proper sizing */
+  max-width: 150px;
+  display: inline-block;
 }
 
-/* Table and card styling adjustments (if needed) */
 .card-img-top {
-  height: 200px; /* Fixed height for images */
-  object-fit: cover; /* Cover the area without distortion */
+  height: 200px;
+  object-fit: cover; 
 }
-
-
-
-
- /* Add this to your App.css file */
 
 .text-red-bold {
   color: red;
@@ -338,17 +324,13 @@ button {
 
 .link-bold {
   font-weight: bold;
-  color: red; /* Optional: Apply the same color to the link */
-  text-decoration: none; /* Optional: Remove underline from the link */
+  color: red;
+  text-decoration: none;
 }
 
 .link-bold:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
-}
+  text-decoration: underline; }
 
-/* App.css */
-
-/* Styling for the confirmation card */
 .confirm-card {
   position: fixed;
   top: 50%;
@@ -360,7 +342,7 @@ button {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1050; /* Ensure it appears above other content */
+  z-index: 1050;
 }
 
 .confirm-card-body {
